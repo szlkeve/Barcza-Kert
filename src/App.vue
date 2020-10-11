@@ -1,9 +1,8 @@
 <template>
   <v-app>
     <v-main>
-      <StartScreen />
-      
-      
+      <nav-bar> </nav-bar>
+      <Home></Home>
     </v-main>
   </v-app>
 </template>
@@ -11,15 +10,17 @@
 <script lang="ts">
 import Vue from "vue";
 
-import StartScreen from "@/components/StartScreen.vue";
+import NavBar from "@/components/NavBar.vue";
+
+import Home from "@/views/Home.vue";
 
 export default Vue.extend({
   name: "App",
+  
 
   components: {
- 
-    StartScreen,
-    
+    NavBar,
+    Home
   },
 
   data: () => ({
